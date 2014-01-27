@@ -65,24 +65,72 @@ Welcome back! What stage were you in before?
 	stage
 end
 
-# Second: Help you pick a habits
+# Habit course teaches people about habits
+def habitcourse
+
+end
+
+# Habit set helps the user choose a habit
 # Test: what's your habit?
+def habitset
+
+	return habit
+end
+
+# Trigger set helps the user set a trigger
+# Test: what's your trigger?
+def triggerset
+
+	return trigger
+end
+
+# Motivation set helps the user set motivation
+# Test: what's your motivation?
+def motivationset
+
+	return motivation
+end
+
+# Reminder set helps the user set a reminder
+# Test: how will you remember?
+def reminderset
+
+	return reminder
+end
+
+# Feedback set helps the user set feedback loops
+# Test: what feedback loop will you use?
+def feedback set
+
+	return feedback
+end
+
+# Route user to correct stage
+def route(user_state)
+	case user_state
+	when 0
+		habitcourse
+	when 1
+		habitset
+	when 2
+		triggerset
+	when 3
+		motivationset
+	when 4
+		reminderset
+	when 5
+		feedbackset
+	end
+end
+
 
 
 # Offer habit suggestions if needed
 
 
-# Test: what's your trigger?
-
-
-# Test: what's your motivation?
-
-
-# Test: how will you remember?
-
-
 # Test: Did you do the habit?
-
+# Test: What obstacles did you face?
+# Test: What adjustments are needed?
 
 # Run the program below by calling above methods
 user_state = userstate
