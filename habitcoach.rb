@@ -2,6 +2,7 @@
 # Will use a series of tests to help you reach your goals
 
 puts "Welcome to Habit Coach 2000."
+# Main program is at bottom, calling these functions below
 
 # Find out if first time here
 def userstate
@@ -144,9 +145,11 @@ end
 # Test: What obstacles did you face?
 # Test: What adjustments are needed?
 
+# Main Program
 # Run the program below by calling above methods
-user_state = userstate
-user_state = greet(user_state)
+user_state = userstate # First check if user has been here
+user_state = greet(user_state) # Then greet based on user_state
+
 puts user_state # This is for testing purposes only, so I can see user_state
 
 # Need to do: create a router loop with this method call:
