@@ -67,12 +67,16 @@ end
 
 # Habit course teaches people about habits
 def habitcourse
+	puts "habitcourse" # for testing
 
+	return user_state = 1
 end
 
 # Habit set helps the user choose a habit
 # Test: what's your habit?
 def habitset
+	puts "habitset" # for testing
+	habit = ""
 
 	return habit
 end
@@ -80,6 +84,8 @@ end
 # Trigger set helps the user set a trigger
 # Test: what's your trigger?
 def triggerset
+	puts "triggerset" # for testing
+	trigger = ""
 
 	return trigger
 end
@@ -87,6 +93,8 @@ end
 # Motivation set helps the user set motivation
 # Test: what's your motivation?
 def motivationset
+	puts "motivationset" # for testing
+	motivation = ""
 
 	return motivation
 end
@@ -94,6 +102,8 @@ end
 # Reminder set helps the user set a reminder
 # Test: how will you remember?
 def reminderset
+	puts "reminderset" # for testing
+	reminder = ""
 
 	return reminder
 end
@@ -101,6 +111,8 @@ end
 # Feedback set helps the user set feedback loops
 # Test: what feedback loop will you use?
 def feedback set
+	puts "feedbackset" # for testing
+	feedback = ""
 
 	return feedback
 end
@@ -135,4 +147,7 @@ end
 # Run the program below by calling above methods
 user_state = userstate
 user_state = greet(user_state)
-puts user_state
+puts user_state # This is for testing purposes only, so I can see user_state
+
+# Need to do: create a router loop with this method call:
+route(user_state)
